@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mark Ian Pamintuan">
+    <meta name="description" content="Anime slideshow">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Anime Slideshow</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Anime Slideshow</h1>
+        </div>
+    </header>
+    
+    <section id="mainImage">
+        <div class="container">
+            <img src="img/Gintama.jpg" alt="Gintama" id="slideshow">
+            <p id="desc">Gintama</p>
+        </div>
+    </section>
+    
+    <section id="galleryImage">
+        <div class="container">
+            <img id="gintama" src="img/Gintama.jpg" alt="Gintama" onclick="clickThumbs(this.src)">
+            <img id="hyouka" src="img/Hyouka.jpg" alt="Hyouka" onclick="clickThumbs(this.src)">
+            <img id="kyoukai" src="img/Kyoukai%20no%20Kanata.jpg" alt="Kyoukai no Kanata" onclick="clickThumbs(this.src)">
+            <img id="noragami" src="img/Noragami.jpg" alt="Noragami" onclick="clickThumbs(this.src)">
+            <img id="tokyo" src="img/Tokyo%20Ghoul.jpg" alt="Tokyo Ghoul" onclick="clickThumbs(this.src)">
+        </div>
+    </section>
+    
+    <section id="controls">
+        <div class="container">
+            <button type="button" id="playFirst" onclick="firstImg()">&Lt;</button>
+            <button type="button" id="playPrev" onclick="prevImg()">&lt;</button>
+            <button type="button" id="playButton" onclick="playSlideShow()">Play</button>
+            <button type="button" id="playNext" onclick="nextImg();">&gt;</button>
+            <button type="button" id="playLast" onclick="lastImg()">&Gt;</button>
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
